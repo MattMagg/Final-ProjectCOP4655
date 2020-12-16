@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme_Light" parent="Theme.AppCompat.Light">
+
+    </style>
+
+    <style name="TextViewHeaderWrap" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:text">@string/example</item>
+    </style>
+
+    <style name="TextViewHeaderMatch" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:text">@string/example</item>
+    </style>
+
+    <style name="TextViewDescriptionMatch" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:text">@string/example</item>
+    </style>
+
+    <style name="TextViewDescriptionWrap" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:text">@string/example</item>
+    </style>
+
+    <style name="Spinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="Button" parent="Widget.AppCompat.ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:text">@string/Search</item>
+    </style>
+
+    <style name="SearchView" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:iconifiedByDefault">false</item>
+    </style>
+
+</resources>

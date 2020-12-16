@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/md_grey_200">
+
+    <LinearLayout
+        android:id="@+id/searchView_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:queryHint="Search by Term"
+            style="@style/SearchView">
+        </SearchView>
+
+        <Button
+            android:id="@+id/searchButton"
+            android:background="@color/colorGrey"
+            style="@style/Button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/spinner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchView_layout"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <Spinner
+            android:id="@+id/spinner_sort"
+            style="@style/Spinner"/>
+
+        <Spinner
+            android:id="@+id/spinner_search"
+            style="@style/Spinner"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/restaurant_recylerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_layout"
+        android:layout_margin="5dp"
+        android:fadeScrollbars="true"
+        android:scrollbarFadeDuration="800"
+        android:scrollbarSize="8dp"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <TextView
+        style="@style/TextViewHeaderMatch"
+        android:gravity="center"
+        android:id="@+id/no_results"
+        android:visibility="gone"
+        android:layout_below="@+id/spinner_layout"
+        android:text="@string/no_result_found"/>
+
+    <include
+        android:id="@+id/progress_bar"
+        layout="@layout/include_progress"
+        android:visibility="gone" />
+
+</RelativeLayout>

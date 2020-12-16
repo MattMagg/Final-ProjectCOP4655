@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.SignupActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:text="SignUp"
+        android:textStyle="bold"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="20dp"
+        android:textSize="30sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Emailtextlayout"
+        style="@style/Widget.Design.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:paddingHorizontal="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Password_text_inputLayout"
+        style="@style/Widget.Design.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Emailtextlayout"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:paddingHorizontal="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Confirmpasslayout"
+        style="@style/Widget.Design.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password_text_inputLayout"
+        android:layout_marginTop="20dp"
+        android:hint="Confirm Password"
+        android:paddingHorizontal="20dp"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmpassword_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Confirmpasslayout"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Register"/>
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRegister"
+        android:layout_centerHorizontal="true"
+        android:text="Already have account"
+        android:textColor="@android:color/black" />
+
+
+    <TextView
+        android:id="@+id/logintextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview2"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+</RelativeLayout>

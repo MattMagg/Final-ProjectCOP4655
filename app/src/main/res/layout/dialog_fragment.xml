@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/title_fragment"
+        style="@style/TextViewHeaderWrap"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="@android:color/black"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/message_fragment"
+        style="@style/TextViewHeaderWrap"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/ten_space"/>
+    <Button
+        android:id="@+id/dialog_ok"
+        style="@style/Button"
+        android:background="@color/colorGrey"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:text="@string/ok"/>
+
+</LinearLayout>

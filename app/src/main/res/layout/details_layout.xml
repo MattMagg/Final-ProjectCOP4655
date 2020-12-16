@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/md_grey_200"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/restaurant_details_recylerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:scrollbars="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/TextViewHeaderWrap"
+                    android:layout_width="match_parent"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="2dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextViewDescriptionWrap"
+                        android:text="@string/phone" />
+
+                    <TextView
+                        android:id="@+id/phone_text"
+                        style="@style/TextViewDescriptionWrap"
+                        android:layout_marginStart="@dimen/ten_space" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_space"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextViewDescriptionWrap"
+                        android:text="@string/rating" />
+
+                    <TextView
+                        android:id="@+id/hours_text"
+                        style="@style/TextViewDescriptionWrap"
+                        android:layout_marginStart="@dimen/ten_space" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/progress_bar"
+        layout="@layout/include_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</LinearLayout>
